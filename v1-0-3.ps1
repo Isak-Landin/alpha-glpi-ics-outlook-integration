@@ -6,6 +6,10 @@ $ScriptDirectory = Split-Path $ScriptPath -Parent
 $DependenciesDirectory = $ScriptDirectory + "\" + "dependencies"
 $DownloadScript = $DependenciesDirectory + "\" + "tokent_auth_direct_download.ps1"
 
+# Import config contents
+$configPath = Join-Path $PSScriptRoot 'data.psd1'
+$config = Import-PowerShellDataFile -Path $configPath
+
 Write-Host "Downloading new ICS file..."
 & $DownloadScript
 
@@ -15,12 +19,28 @@ $ICSFilePath = "$env:USERPROFILE\glpiToOutlook"
 $ICSFile = $ICSFilePath + "\" + $ICSFileName
 
 # Define expected calendar name
-$ExpectedCalendarName = "TestCreation"
+$ExpectedCalendarName = $config.ExpectedCalendarName
+
+# Define how old is "too old" (e.g., 1 hour)
+$maxAgeMinutes = 60
 
 # Check if the ICS file exists
 if (-Not (Test-Path $ICSFile)) {
     Write-Host "Error: ICS file not found at $ICSFile" -ForegroundColor Red
-    Exit
+    Exit 1
+}
+
+# Check if the ICS file is empty
+if ((Get-Item $ICSFile).Length -eq 0) {
+    Write-Host "Error: ICS file is empty" -ForegroundColor Red
+    Exit 1
+}
+
+# Check if the ICS file is too old
+$fileAgeMinutes = (New-TimeSpan -Start (Get-Item $ICSFile).LastWriteTime -End (Get-Date)).TotalMinutes
+if ($fileAgeMinutes -gt $maxAgeMinutes) {
+    Write-Host "Error: ICS file is older than $maxAgeMinutes minutes ($([math]::Round($fileAgeMinutes,2)) minutes old)" -ForegroundColor Red
+    Exit 1
 }
 
 # Get Outlook Application
