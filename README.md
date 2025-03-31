@@ -69,8 +69,6 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
    ```
 
   2. #### ⚠️ **Important Recommendations**
-Avoid setting this (The calendar name) to your default Outlook calendar (where your personal or work meetings are stored).
-Instead, create a separate calendar — for example, AutoImport — to isolate imported events.
-This is recommended because the script deletes all existing events in the calendar before importing the latest ones. This ensures that duplicate entries aren’t created when re-importing to fetch newly added events.
+     Avoid setting this (The calendar name) to your default Outlook calendar (where your personal or work meetings are stored). Instead, create a separate calendar — for example, AutoImport — to isolate imported events. This is recommended because the script deletes all existing events in the calendar before importing the latest ones. This ensures that duplicate entries aren’t created when re-importing to fetch newly added events.
 
 
