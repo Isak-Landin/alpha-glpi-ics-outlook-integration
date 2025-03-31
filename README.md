@@ -30,9 +30,14 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 
 ---
 ## :wrench: Usage
-- Firstly, get your own download link address that is tied to your account, you can find it here (glpi-address.xyz/front/planning.php):
-![image](https://github.com/user-attachments/assets/7cf26121-069c-4668-9283-48b8643231a4)
-- Copy the link address
+### 1️⃣ Get Your Personal ICS Download Link
+
+1. Visit your GLPI calendar planning page:  
+   `glpi-address.xyz/front/planning.php`
+
+2. Locate and copy the download link that's tied to your account.
+
+   ![Get Link Screenshot](https://github.com/user-attachments/assets/7cf26121-069c-4668-9283-48b8643231a4)
 
 - The second step would be to open the folder in which you find the data.psd1 file (/path/to/github-folder/data.psd1) and paste your download link url in the placeholder for the "IcsUrl"-variable:
 
