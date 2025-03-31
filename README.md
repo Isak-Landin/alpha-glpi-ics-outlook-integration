@@ -59,7 +59,7 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 ### 3️⃣ Set the Target Calendar Name
 
 1. In the same configuration file (`data.psd1`), update the `ExpectedCalendarName` value to match the **exact name** of the Outlook calendar you want to import the events into.
-    1.1. This `ExpectedCalendarName` is going to reference an Outlook calendar, **You can create the calendar later**, just remember the name.
+- This `ExpectedCalendarName` is going to reference an Outlook calendar, **You can create the calendar later**, just remember the name.
 
    ```powershell
    @{
