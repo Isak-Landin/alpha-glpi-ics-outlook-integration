@@ -39,5 +39,7 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 ![image](https://github.com/user-attachments/assets/597d984b-e28a-4b26-993a-d36da46e4693)
 ![image](https://github.com/user-attachments/assets/140475e6-cb55-4613-b10b-5d0f86842a24)
 
+- The third step is to change the variable "ExpectedCalendarName" in /path/to/github-folder/data.psd1 to whatever name the calendar that you will import the events to. Keep in mind that I **strongly recommend against** integrating the imported calendar with your default calendar (The calendar you have all your upcoming events stored in)
+
 
 
