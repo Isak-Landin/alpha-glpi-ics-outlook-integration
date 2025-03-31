@@ -3,10 +3,10 @@
 # Resolve script path and supporting files
 $ScriptPath = $MyInvocation.MyCommand.Path
 $ScriptDirectory = Split-Path $ScriptPath -Parent
-$DependenciesDirectory = $ScriptDirectory + "\" + "dependencies"
-$DownloadScript = $DependenciesDirectory + "\" + "tokent_auth_direct_download.ps1"
+$DependenciesDirectory = Join-Path $ScriptDirectory "dependencies"
+$DownloadScript = Join-Path $DependenciesDirectory "tokent_auth_direct_download.ps1"
 
-# Import config contents
+# Load User Configurations
 $configPath = Join-Path $PSScriptRoot 'data.psd1'
 $config = Import-PowerShellDataFile -Path $configPath
 
@@ -15,8 +15,8 @@ Write-Host "Downloading new ICS file..."
 
 # Define the ICS file path
 $ICSFileName = "calendar_direct.ics"
-$ICSFilePath = "$env:USERPROFILE\glpiToOutlook"
-$ICSFile = $ICSFilePath + "\" + $ICSFileName
+$ICSFilePath = Join-Path "$env:USERPROFILE" "glpiToOutlook"
+$ICSFile = Join-Path $ICSFilePath $ICSFileName
 
 # Define expected calendar name
 $ExpectedCalendarName = $config.ExpectedCalendarName

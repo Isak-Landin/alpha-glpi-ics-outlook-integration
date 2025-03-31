@@ -1,16 +1,17 @@
-﻿# Define URL with your generated token
-$PersonalToken = "ov9ZA0NpTZoRytgbWhl7IBSdX77CLTcsNDZAA1QM" 
+﻿# Load User Configurations
 
 # Comparison URL
 # $icsUrl = "https://support.compliq.se/front/planning.php?genical=1&uID=306&gID=0&entities_id=0&is_recursive=1&token=0sG8nv7V0owVbBlWwx5tqPUmT3Blu0PEZoqQPZbz"
-$icsUrl = "https://support.compliq.se/front/planning.php?genical=1&uID=306&gID=0&entities_id=0&is_recursive=1&token=0sG8nv7V0owVbBlWwx5tqPUmT3Blu0PEZoqQPZbz"
+# $icsUrl = "https://support.compliq.se/front/planning.php?genical=1&uID=306&gID=0&entities_id=0&is_recursive=1&token=0sG8nv7V0owVbBlWwx5tqPUmT3Blu0PEZoqQPZbz"
+$icsUrl = "https://support.compliq.se/front/planning.php?genical=1&uID=8&gID=0&entities_id=0&is_recursive=1&token=sEB6oBgoq3HrPSr5IT32QDDG3CylUH4Wvahj1W1w"
+$icsUrl = null
 
 ## Personal token not working, just generating a blank page
 # $icsUrl = "https://support.compliq.se/front/planning.php?genical=1&uID=306&gID=0&entities_id=0&is_recursive=1&token=ov9ZA0NpTZoRytgbWhl7IBSdX77CLTcsNDZAA1QM"
 
 Write-Host $icsUrl
 
-$customPath = "$env:USERPROFILE\glpiToOutlook"
+$customPath = Join-Path "$env:USERPROFILE" "glpiToOutlook"
 
 if (-Not (Test-Path -Path $customPath)){
     # Test if it is the user path or the glpi folder that does not exist
@@ -33,7 +34,7 @@ if (-Not (Test-Path -Path $customPath)){
 }
 
 # Define where to save the ICS file
-$downloadPath = $customPath + "\calendar_direct.ics"
+$downloadPath = Join-Path $customPath "calendar_direct.ics"
 
 # Download the ICS file
 # TODO This part needs to be implemented when we know how to save request as repsonse in ps1
