@@ -71,12 +71,17 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
   2. #### ⚠️ **Important Recommendations**
      Avoid setting this (The calendar name) to your default Outlook calendar (where your personal or work meetings are stored). Instead, create a separate calendar — for example, AutoImport — to isolate imported events. This is recommended because the script deletes all existing events in the calendar before importing the latest ones. This ensures that duplicate entries aren’t created when re-importing to fetch newly added events.
 
-### 4️⃣ Create an Outlook Target Calendar for export
-1. Open your Outlook application, preferrably Classic. Go to 'Calendar'. In your navigation bar you should see 'Add Calendar', select 'Create New Blank Calendar':
+### 4️⃣ Create an Outlook Target Calendar for Export
+
+1. Open your Outlook application, preferably the Classic version.  
+   Go to the **Calendar** view. In your navigation bar, click **Add Calendar** → **Create New Blank Calendar**:
+
    ![image](https://github.com/user-attachments/assets/2ec0365c-f709-4713-84cd-033e596124d1)
 
-   Name it to whatever you chose as the name in the /path/to/github-repo/data.psd1 file
+2. Name the calendar to exactly match the value you set for `ExpectedCalendarName` in your `/path/to/github-repo/data.psd1` file:
+
    ![image](https://github.com/user-attachments/assets/7796e6d6-cdd1-4bf4-93da-a55db34c9939)
+
 
 
 
