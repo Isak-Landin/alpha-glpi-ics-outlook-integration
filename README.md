@@ -18,7 +18,7 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 ## 📁 Project Structure
 ``` bash
 .
-├─── v1-0-3.ps1                               # Working alpha version
+├─── v1-0-x.ps1                               # Working alpha version, current final number varies
 ├─── data.psd1                                # Configuration values for variables used in script
 ├───dependencies
     └─── ics_download.ps1                     # Downloads Ics file from glpi-url specified in data.psd1 
