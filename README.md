@@ -38,7 +38,7 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 
 2. Locate and copy the download link that's tied to your account.
 
-   ![Get Link Screenshot](https://github.com/user-attachments/assets/7cf26121-069c-4668-9283-48b8643231a4)
+![image](https://github.com/user-attachments/assets/b5926ea4-262f-44c3-8955-1c4556f4abc5)
 
 ---
 
