@@ -23,5 +23,5 @@ This PowerShell script automates the process of downloading a GLPI service desk 
 ├───InvokeCredentials
     └─── token_auth_direct_download.ps1       # OLD, no longer in use since authentication does not work due to sso setup
     └─── v1-0-0.ps1                           # OLD, original test
-└───tmp
+└───tmp                                       # Unused files, that are simple there for test purposes
 ```
