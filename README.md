@@ -104,7 +104,7 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 If the script won't run, use:
 
 ```powershell
-powershell.exe -ExecutionPolicy Bypass -File .\v1-0-3.ps1
+powershell.exe -ExecutionPolicy Bypass -File .\v1-0-4.ps1
 ```
 
 ---
