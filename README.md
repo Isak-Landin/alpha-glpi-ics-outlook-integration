@@ -2,6 +2,8 @@
 
 This PowerShell script automates the process of downloading a GLPI service desk `.ics` calendar file and importing its events directly into a named sub-calendar within Microsoft Outlook.
 
+This Script is intended as a workaround. A workaround in two aspects, the first of which is if your organisation is using MS SSO or any other external auth-service that in turn does not allow you to use CalDav or WebCal to synchronize your glpi calendar to your Outlook calendar. The second part of the workaround is simply the fact that the issue can be resolved if you have admin or more specific permission in order to implement a smoother solution; such as creating a user utilizing glpi db username and password that can access your or many other's calendars. The second part would inherently result in Webcal or CalDav synchronization being possible.
+
 ---
 
 ## 📦 Features
