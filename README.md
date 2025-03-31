@@ -30,6 +30,7 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 
 ---
 ## :wrench: Usage
+
 ### 1️⃣ Get Your Personal ICS Download Link
 
 1. Visit your GLPI calendar planning page:  
@@ -39,7 +40,23 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 
    ![Get Link Screenshot](https://github.com/user-attachments/assets/7cf26121-069c-4668-9283-48b8643231a4)
 
-- The second step would be to open the folder in which you find the data.psd1 file (/path/to/github-folder/data.psd1) and paste your download link url in the placeholder for the "IcsUrl"-variable:
+---
+
+### 2️⃣ Set Up the `data.psd1` Configuration File
+
+1. Open the configuration file located at /path/to/github-folder/data.psd1:
+
+   ![Get Link Screenshot](https://github.com/user-attachments/assets/7cf26121-069c-4668-9283-48b8643231a4)
+
+
+2. Paste your copied ICS download link into the `IcsUrl` field:
+
+```powershell
+@{
+    ExpectedCalendarName = 'AutoImport'
+    IcsUrl = 'PASTE_YOUR_ICS_URL_HERE'
+}
+```
 
 ![image](https://github.com/user-attachments/assets/597d984b-e28a-4b26-993a-d36da46e4693)
 ![image](https://github.com/user-attachments/assets/140475e6-cb55-4613-b10b-5d0f86842a24)
