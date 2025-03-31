@@ -66,7 +66,4 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
        ExpectedCalendarName = 'YourCalendarNameHere'
        IcsUrl = 'https://your-glpi-url...?token=...'
    }
-
-
-
-
+   ```
