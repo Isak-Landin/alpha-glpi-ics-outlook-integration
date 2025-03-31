@@ -14,11 +14,9 @@ This PowerShell script automates the process of downloading a GLPI service desk 
 ---
 
 ## 📁 Project Structure
-
+``` bash
 .
-├── v1-0-3.ps1
-├── data.psd1
-├── dependecies
-    ├── tokent_auth_direct_download.ps1
-├── LICENSE
-└── README.md
+├───dependencies
+├───InvokeCredentials
+└───tmp
+```
