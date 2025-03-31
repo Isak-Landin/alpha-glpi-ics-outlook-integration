@@ -29,7 +29,7 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 ```
 
 ---
-## :wrench: Usage
+## :wrench: Setup
 
 ### 1️⃣ Get Your Personal ICS Download Link
 
