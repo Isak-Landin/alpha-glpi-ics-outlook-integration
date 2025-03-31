@@ -19,7 +19,7 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 ``` bash
 .
 ├─── v1-0-3.ps1                               # Working alpha version
-├─── data.psd1                                # Configuration values for varables used in script
+├─── data.psd1                                # Configuration values for variables used in script
 ├───dependencies
     └─── ics_download.ps1                     # Downloads Ics file from glpi-url specified in data.psd1 
 ├───InvokeCredentials
