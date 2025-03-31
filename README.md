@@ -32,3 +32,11 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 ## :wrench: Usage
 - Firstly, get your own download link address that is tied to your account, you can find it here (glpi-address.xyz/front/planning.php):
 ![image](https://github.com/user-attachments/assets/7cf26121-069c-4668-9283-48b8643231a4)
+- Copy the link address
+
+- The second step would be to open the folder in which you find the data.psd1 file (/path/to/github-folder/data.psd1) and paste your download link url in the placeholder for the "IcsUrl"-variable:
+![image](https://github.com/user-attachments/assets/597d984b-e28a-4b26-993a-d36da46e4693)
+![image](https://github.com/user-attachments/assets/140475e6-cb55-4613-b10b-5d0f86842a24)
+
+
+
