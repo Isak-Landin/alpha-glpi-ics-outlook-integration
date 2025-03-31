@@ -24,7 +24,6 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 |   └─── ics_download.ps1                     # Downloads Ics file from glpi-url specified in data.psd1 
 ├───InvokeCredentials
 |   └─── token_auth_direct_download.ps1       # OLD, no longer in use since authentication does not work due to sso setup
-|   └─── v1-0-0.ps1                           # OLD, original test
 └───tmp                                       # Unused files, that are simple there for test purposes
 ```
 
