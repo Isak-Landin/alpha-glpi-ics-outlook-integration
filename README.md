@@ -56,6 +56,8 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 }
 ```
 
+---
+
 ### 3️⃣ Set the Target Calendar Name
 
 1. In the same configuration file (`data.psd1`), update the `ExpectedCalendarName` value to match the **exact name** of the Outlook calendar you want to import the events into.
@@ -71,6 +73,8 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
   2. #### ⚠️ **Important Recommendations**
      Avoid setting this (The calendar name) to your default Outlook calendar (where your personal or work meetings are stored). Instead, create a separate calendar — for example, AutoImport — to isolate imported events. This is recommended because the script deletes all existing events in the calendar before importing the latest ones. This ensures that duplicate entries aren’t created when re-importing to fetch newly added events.
 
+---
+
 ### 4️⃣ Create an Outlook Target Calendar for Export
 
 1. Open your Outlook application, preferably the Classic version.  
@@ -81,6 +85,22 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 2. Name the calendar to exactly match the value you set for `ExpectedCalendarName` in your `/path/to/github-repo/data.psd1` file:
 
    ![image](https://github.com/user-attachments/assets/7796e6d6-cdd1-4bf4-93da-a55db34c9939)
+
+
+---
+
+
+## 🚀 Usage
+
+> Before running the script, please ensure the following:
+
+- ✅ **Outlook (preferably Classic) should be open**  
+  The script uses the Outlook COM object to create and manage calendar events. If Outlook is closed, the script won't fail to access the required calendar folders, but you will be annoyed 🥲.
+
+- ✅ **The target calendar (e.g. `AutoImport`) must already exist in Outlook**  
+  The script does not create new calendars. Be sure to create the calendar manually before running the script.
+
+---
 
 
 
