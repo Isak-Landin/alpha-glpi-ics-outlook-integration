@@ -21,10 +21,10 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 ├─── v1-0-x.ps1                               # Working alpha version, current final number varies
 ├─── data.psd1                                # Configuration values for variables used in script
 ├───dependencies
-    └─── ics_download.ps1                     # Downloads Ics file from glpi-url specified in data.psd1 
+|   └─── ics_download.ps1                     # Downloads Ics file from glpi-url specified in data.psd1 
 ├───InvokeCredentials
-    └─── token_auth_direct_download.ps1       # OLD, no longer in use since authentication does not work due to sso setup
-    └─── v1-0-0.ps1                           # OLD, original test
+|   └─── token_auth_direct_download.ps1       # OLD, no longer in use since authentication does not work due to sso setup
+|   └─── v1-0-0.ps1                           # OLD, original test
 └───tmp                                       # Unused files, that are simple there for test purposes
 ```
 
