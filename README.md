@@ -100,6 +100,13 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 - ✅ **The target calendar (e.g. `AutoImport`) must already exist in Outlook**  
   The script does not create new calendars. Be sure to create the calendar manually before running the script.
 
+
+If the script won't run, use:
+
+```powershell
+powershell.exe -ExecutionPolicy Bypass -File .\v1-0-3.ps1
+```
+
 ---
 
 
