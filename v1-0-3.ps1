@@ -4,7 +4,7 @@
 $ScriptPath = $MyInvocation.MyCommand.Path
 $ScriptDirectory = Split-Path $ScriptPath -Parent
 $DependenciesDirectory = Join-Path $ScriptDirectory "dependencies"
-$DownloadScript = Join-Path $DependenciesDirectory "tokent_auth_direct_download.ps1"
+$DownloadScript = Join-Path $DependenciesDirectory "ics_download.ps1"
 
 # Load User Configurations
 $configPath = Join-Path $PSScriptRoot 'data.psd1'
