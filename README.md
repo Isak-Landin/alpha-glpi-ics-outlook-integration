@@ -44,9 +44,7 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 
 ### 2️⃣ Set Up the `data.psd1` Configuration File
 
-1. Open the configuration file located at /path/to/github-folder/data.psd1:
-
-   ![Get Link Screenshot](https://github.com/user-attachments/assets/7cf26121-069c-4668-9283-48b8643231a4)
+1. Open the configuration file located at /path/to/github-repo/data.psd1:
 
 
 2. Paste your copied ICS download link into the `IcsUrl` field:
@@ -58,10 +56,17 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
 }
 ```
 
-![image](https://github.com/user-attachments/assets/597d984b-e28a-4b26-993a-d36da46e4693)
-![image](https://github.com/user-attachments/assets/140475e6-cb55-4613-b10b-5d0f86842a24)
+### 3️⃣ Set the Target Calendar Name
 
-- The third step is to change the variable "ExpectedCalendarName" in /path/to/github-folder/data.psd1 to whatever name the calendar that you will import the events to. Keep in mind that I **strongly recommend against** integrating the imported calendar with your default calendar (The calendar you have all your upcoming events stored in)
+1. In the same configuration file (`data.psd1`), update the `ExpectedCalendarName` value to match the **exact name** of the Outlook calendar you want to import the events into.
+    1.1. This `ExpectedCalendarName` is going to reference an Outlook calendar, **You can create the calendar later**, just remember the name.
+
+   ```powershell
+   @{
+       ExpectedCalendarName = 'YourCalendarNameHere'
+       IcsUrl = 'https://your-glpi-url...?token=...'
+   }
+
 
 
 
