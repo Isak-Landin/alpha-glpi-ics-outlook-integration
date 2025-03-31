@@ -27,3 +27,8 @@ This Script is intended as a workaround. A workaround in two aspects, the first 
     └─── v1-0-0.ps1                           # OLD, original test
 └───tmp                                       # Unused files, that are simple there for test purposes
 ```
+
+---
+## :wrench: Usage
+- Firstly, get your own download link address that is tied to your account, you can find it here (glpi-address.xyz/front/planning.php):
+![image](https://github.com/user-attachments/assets/7cf26121-069c-4668-9283-48b8643231a4)
